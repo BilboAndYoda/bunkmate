@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   devise_scope :user do
   get '/sign-in' => "devise/sessions#new", :as => :login
   end
+  
+  get '/questionaire', to: 'questionaire#index'
+  
 end
