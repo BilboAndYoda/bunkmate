@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   
   get '/questionaire', to: 'questionaire#index'
   
-end
+  get '/admin', to: 'admin#index'
+  
+  end
