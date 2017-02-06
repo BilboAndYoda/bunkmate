@@ -1,0 +1,2 @@
+class ZackakinController < ApplicationController
+end
