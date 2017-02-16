@@ -1,0 +1,41 @@
+#gem install mongo
+require 'rubygems'
+require 'mongo'
+
+Mongo::Logger.logger.level = ::Logger::DEBUG
+
+begin
+    
+    #db = Mongo::Connection.new.db("testDB") # OR
+    #db = Mongo::Connection.new("localhost").db("mydb") # OR
+    db = Mongo::Client.new([ 'localhost' ], :database => 'bm_development')
+    #db = Mongo::Connection.new("localhost", 27017).db("testDB")
+    
+    db.database_names.each { |name| puts name }
+    
+#    doc = { :_id => 9, :name => "Toyota", :price => 37600 } 
+=begin
+    result = db[:students].insert_many([
+    { :_id => BSON::ObjectId.new, :firstName => 'Chris', :middleInit => 'R', :lastName => 'Hansen', :id => 1, :gender => 'Male', :questionaireID => 1, :roomID => 0, :email => 'crh@bm.com'},
+    { :_id => BSON::ObjectId.new, :firstName => 'Sarah', :middleInit => 'G', :lastName => 'Bazingo', :id => 2, :gender => 'Female', :questionaireID => 2, :roomID => 0, :email => 'sgb@bm.com'},
+    { :_id => BSON::ObjectId.new, :firstName => 'Madison', :middleInit => 'W', :lastName => 'Case', :id => 3, :gender => 'Female', :questionaireID => 3, :roomID => 0, :email => 'mwc@bm.com'},
+    { :_id => BSON::ObjectId.new, :firstName => 'Girlie', :middleInit => 'A', :lastName => 'Haynes', :id => 4, :gender => 'Female', :questionaireID => 4, :roomID => 0, :email => 'gah@bm.com'},
+    { :_id => BSON::ObjectId.new, :firstName => 'Bob', :middleInit => 'E', :lastName => 'Trump', :id => 5, :gender => 'Male', :questionaireID => 5, :roomID => 0, :email => 'bet@bm.com'},
+    { :_id => BSON::ObjectId.new, :firstName => 'Francis', :middleInit => 'R', :lastName => 'Will', :id => 6, :gender => 'Male', :questionaireID => 6, :roomID => 0, :email => 'frw@bm.com'}
+    ])
+
+    puts "#{result.inserted_count} documents were inserted"
+=end
+    
+    db.collections.each { |coll| puts coll.name }
+
+    db[:students].find.each { |doc| puts doc }
+    
+    rescue Mongo::Error::NoServerAvailable => e
+    
+        p "Cannot connect to the server"
+        p e
+    
+end
+
+#collection = db[:answer]
