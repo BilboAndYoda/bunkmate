@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'admin/match'
+
+  get 'admin/questionnaire'
+
+  get 'admin/profile'
+
+  get 'admin/students'
+
   root :to => 'home#index'
 
   devise_for :users
