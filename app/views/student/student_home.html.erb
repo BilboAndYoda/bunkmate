@@ -1,0 +1,32 @@
+<div style="background:white !important" class= "jumbotron">
+  <h1 class="text-center">Student HomePage</h1>
+   <h3 class="text-center">This is where you can find info on your matches and dorm</h3>
+</div>
+
+
+<div style="background:white !important" class= "jumbotron">
+    <div  class="container">
+        <!--This the image link for matches -->
+        <div class="col-sm-6 col-md-4">
+            <div align="center" class="img-circle">
+                <h2 align="center"> Your Roommates </h2>
+                <%= link_to image_tag("Studenthomepage1.jpg", :size => "260x180"), "/student/matches", :align=> "center" %>
+                <p>These are the people who you got matched with!</p>
+            </div>
+        </div>
+        
+        <!--This is just a hacked up space in the middle -->
+         <div  class="col-sm-6 col-md-4">
+         </div>
+         
+         <!--This The image link for dorms -->
+        <div  class="col-sm-6 col-md-4">
+            <div align="center" class="img-circle" >
+                <h2 align="center"> Dorm Info </h2>
+                <%= link_to image_tag("Studenthomepage2.jpg", :size => "260x180"), "/student/dorm" %>
+                <p>Random info on how this is your dorm! </p>
+            </div>
+        </div>
+        
+    </div>
+</div>
