@@ -1,6 +1,18 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+
+  get 'student/matches'
+
+  get 'student/contact'
+
+  get 'student/dorm'
+  
+  get 'student/student_home'
+
+=======
   get 'answer/index'
   post 'answer/new'
+>>>>>>> origin/master
   root :to => 'home#index'
 
   devise_for :users
