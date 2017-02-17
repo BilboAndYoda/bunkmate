@@ -17400,3 +17400,696 @@ puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
   Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.5ms)
+Started GET "/" for 10.240.0.182 at 2017-02-15 21:17:00 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnswerController#index as HTML
+  Rendering answer/index.html.erb within layouts/application
+  Rendered answer/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 785ms (Views: 758.5ms)
+
+
+Started GET "/favicon.ico" for 10.240.0.119 at 2017-02-15 21:17:04 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (166.0ms)
+Started GET "/answer/index" for 10.240.0.241 at 2017-02-15 21:17:15 +0000
+Cannot render console from 10.240.0.241! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnswerController#index as HTML
+  Rendering answer/index.html.erb within layouts/application
+  Rendered answer/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 156ms (Views: 154.2ms)
+
+
+Started GET "/answer/index" for 10.240.0.187 at 2017-02-15 21:17:18 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnswerController#index as HTML
+  Rendering answer/index.html.erb within layouts/application
+  Rendered answer/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 71ms (Views: 69.6ms)
+
+
+Started GET "/" for 10.240.0.69 at 2017-02-15 21:17:42 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnswerController#index as HTML
+  Rendering answer/index.html.erb within layouts/application
+  Rendered answer/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 102ms (Views: 99.9ms)
+
+
+Started GET "/" for 10.240.0.119 at 2017-02-15 21:18:21 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/ubuntu/workspace/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as HTML
+Redirected to http://bunkmate-jobeau.c9users.io:8080/sign-in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms
+
+
+Started GET "/sign-in" for 10.240.0.179 at 2017-02-15 21:18:21 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 88ms (Views: 85.3ms)
+
+
+Started POST "/users/sign_in" for 10.240.0.179 at 2017-02-15 21:18:40 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"By4ojVpdKzGj+xhOrmFiUPa+ahG+nbFcqL0s6BrtoOIoT/8oc+wXdePVa0tN6TljwfKLav/qPXIhIaIISsvrtg==", "user"=>{"email"=>"jboudreau12@apu.edu", "password"=>"Discocat5"}, "commit"=>"Sign in"}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jboudreau12@apu.edu"}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001323984s
+MONGODB | localhost:27017 | bm_development.update | STARTED | {"update"=>"users", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "u"=>{"$set"=>{"last_sign_in_at"=>2017-02-13 20:56:23 UTC, "current_sign_in_at"=>2017-02-15 21:18:40 UTC, "last_sign_in_ip"=>"10.240.0.182", "current_sign_in_ip...
+MONGODB | localhost:27017 | bm_development.update | SUCCEEDED | 0.000845503s
+Redirected to http://bunkmate-jobeau.c9users.io:8080/
+Completed 302 Found in 299ms
+
+
+Started GET "/" for 10.240.0.207 at 2017-02-15 21:18:41 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000653396s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0006460460000000001s
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 76ms (Views: 71.9ms)
+
+
+Started GET "/" for 10.240.0.110 at 2017-02-15 21:19:56 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000504186s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.005793632999999999s
+  Rendered home/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 124ms (Views: 120.8ms)
+
+
+Started DELETE "/users/sign_out" for 10.240.1.64 at 2017-02-15 21:20:02 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cEFVIDskuqQxvaPbML2/VP37p2tETfVCMuGvtiD3129mjA8lSCGV9o4CFYNzVHnjapNAkHvWKkJ3egzMQpg2Qg=="}
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000535409s
+Redirected to http://bunkmate-jobeau.c9users.io:8080/
+Completed 302 Found in 7ms
+
+
+Started GET "/" for 10.240.1.60 at 2017-02-15 21:20:03 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+Redirected to http://bunkmate-jobeau.c9users.io:8080/sign-in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/sign-in" for 10.240.1.60 at 2017-02-15 21:20:03 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:6: syntax error, unexpected ')', expecting =>
+...ry btn-block", "/answer/index");@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:8: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end   
+             ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:12: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/devise/sessions/new.html.erb:6: syntax error, unexpected ')', expecting =>
+app/views/devise/sessions/new.html.erb:8: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/sessions/new.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/devise/sessions/new.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.9ms)
+Started GET "/sign-in" for 10.240.0.187 at 2017-02-15 21:20:42 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...n-primary btn-block", link_to 'submit', "/answer/index");@ou...
+...                               ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:6: syntax error, unexpected ',', expecting ')'
+...y btn-block", link_to 'submit', "/answer/index");@output_buf...
+...                               ^):
+  
+app/views/devise/sessions/new.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/devise/sessions/new.html.erb:6: syntax error, unexpected ',', expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.6ms)
+Started GET "/sign-in" for 10.240.0.206 at 2017-02-15 21:21:16 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 88ms (Views: 87.1ms)
+
+
+Started GET "/answer/index" for 10.240.1.64 at 2017-02-15 21:21:19 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnswerController#index as HTML
+  Rendering answer/index.html.erb within layouts/application
+  Rendered answer/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 76ms (Views: 67.8ms)
+
+
+Started GET "/answer/index" for 10.240.0.187 at 2017-02-15 21:21:43 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnswerController#index as HTML
+  Rendering answer/index.html.erb within layouts/application
+  Rendered answer/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 56ms (Views: 55.1ms)
+
+
+Started GET "/" for 10.240.1.60 at 2017-02-15 21:21:47 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+Redirected to http://bunkmate-jobeau.c9users.io:8080/sign-in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/sign-in" for 10.240.0.187 at 2017-02-15 21:21:47 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 5ms
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting =>
+...-primary btn-block", :link_to 'submit', "/answer/index");@ou...
+...                               ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:6: syntax error, unexpected ',', expecting ')'
+... btn-block", :link_to 'submit', "/answer/index");@output_buf...
+...                               ^):
+  
+app/views/devise/sessions/new.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting =>
+app/views/devise/sessions/new.html.erb:6: syntax error, unexpected ',', expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.5ms)
+Started GET "/sign-in" for 10.240.1.19 at 2017-02-15 21:24:46 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 10ms
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:6: syntax error, unexpected ')'
+...n-lg btn-primary btn-block",  );@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:7: unknown regexp option - d
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end   
+             ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/devise/sessions/new.html.erb:6: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:7: unknown regexp option - d
+app/views/devise/sessions/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/sessions/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/devise/sessions/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.1ms)
+Started GET "/sign-in" for 10.240.0.187 at 2017-02-15 21:24:54 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:7: unknown regexp option - d):
+  
+app/views/devise/sessions/new.html.erb:7: unknown regexp option - d
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.6ms)
+Started GET "/sign-in" for 10.240.0.241 at 2017-02-15 21:25:17 +0000
+Cannot render console from 10.240.0.241! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:7: unknown regexp option - d):
+  
+app/views/devise/sessions/new.html.erb:7: unknown regexp option - d
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (40.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.2ms)
+Started GET "/sign-in" for 10.240.1.60 at 2017-02-15 21:25:28 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 64ms (Views: 62.8ms)
+
+
+Started GET "/home/index" for 10.240.1.20 at 2017-02-15 21:25:34 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.6ms)
+Started GET "/home/index" for 10.240.1.15 at 2017-02-15 21:25:53 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.8ms)
+Started GET "/sign-in" for 10.240.1.64 at 2017-02-15 21:25:57 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 64ms (Views: 62.7ms)
+
+
+Started POST "/users/sign_in" for 10.240.1.64 at 2017-02-15 21:26:05 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xYCiJKi4KmGRr/MdrCYk0B9/d6O/RjZ/v/PZ8SMlALphH8NKtc+B2LU5xAGeR45M4av6oFwZKHXMs3E6Uqushw==", "user"=>{"email"=>"jboudreau12@apu.edu", "password"=>"Discocat5"}, "commit"=>"Sign in"}
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jboudreau12@apu.edu"}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001057527s
+MONGODB | localhost:27017 | bm_development.update | STARTED | {"update"=>"users", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "u"=>{"$set"=>{"last_sign_in_at"=>2017-02-15 21:18:40 UTC, "current_sign_in_at"=>2017-02-15 21:26:06 UTC, "last_sign_in_ip"=>"10.240.0.179", "current_sign_in_ip...
+MONGODB | localhost:27017 | bm_development.update | SUCCEEDED | 0.000547548s
+Redirected to http://bunkmate-jobeau.c9users.io:8080/
+Completed 302 Found in 154ms
+
+
+Started GET "/" for 10.240.0.110 at 2017-02-15 21:26:06 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000628683s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000715336s
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 64ms (Views: 60.8ms)
+
+
+Started GET "/sign-in" for 10.240.1.15 at 2017-02-15 21:26:33 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000605677s
+Redirected to http://bunkmate-jobeau.c9users.io:8080/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 10.240.1.15 at 2017-02-15 21:26:33 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000711977s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000779285s
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 76ms (Views: 72.1ms)
+
+
+Started DELETE "/users/sign_out" for 10.240.0.69 at 2017-02-15 21:26:38 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8sLOFw96viqQ2o2Zy7EDsifOno4hi6vd4r1zA39texiP29B5vcHwC2ret8UdiaXBWQ8jtG+aKAgLrDl4ddcp8g=="}
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000586024s
+Redirected to http://bunkmate-jobeau.c9users.io:8080/
+Completed 302 Found in 4ms
+
+
+Started GET "/" for 10.240.1.15 at 2017-02-15 21:26:38 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+Redirected to http://bunkmate-jobeau.c9users.io:8080/sign-in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/sign-in" for 10.240.1.15 at 2017-02-15 21:26:39 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:7: syntax error, unexpected ')', expecting =>
+...ary btn-block", "/home/index" );@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end   
+             ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/devise/sessions/new.html.erb:7: syntax error, unexpected ')', expecting =>
+app/views/devise/sessions/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/sessions/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/devise/sessions/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.2ms)
+Started GET "/sign-in" for 10.240.0.119 at 2017-02-15 21:27:00 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:7: syntax error, unexpected ')'
+...n-lg btn-primary btn-block",  );@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end   
+             ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/devise/sessions/new.html.erb:7: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/sessions/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/devise/sessions/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.1ms)
+Started GET "/sign-in" for 10.240.0.204 at 2017-02-15 21:27:32 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:7: syntax error, unexpected ')'
+...n-lg btn-primary btn-block",  );@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end   
+             ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/devise/sessions/new.html.erb:7: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/sessions/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/devise/sessions/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.9ms)
+Started GET "/sign-in" for 10.240.1.32 at 2017-02-15 21:27:42 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:7: syntax error, unexpected ')'
+...n-lg btn-primary btn-block",  );@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end   
+             ^
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/app/views/devise/sessions/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/devise/sessions/new.html.erb:7: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/sessions/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/devise/sessions/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.1ms)
+Started GET "/sign-in" for 10.240.0.207 at 2017-02-15 21:27:45 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 68ms (Views: 66.6ms)
+
+
+Started GET "/sign-in" for 10.240.0.179 at 2017-02-15 21:28:22 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 215ms (Views: 213.6ms)
+
+
+Started GET "/sign-in" for 10.240.0.110 at 2017-02-15 21:28:43 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 138ms (Views: 122.7ms)
+
+
+Started GET "/sign-in" for 10.240.1.19 at 2017-02-15 21:29:01 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 210ms (Views: 208.1ms)
+
+
+Started GET "/sign-in" for 10.240.0.187 at 2017-02-15 21:29:27 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 103ms (Views: 101.2ms)
+
+
+Started GET "/sign-in" for 10.240.0.204 at 2017-02-15 21:32:34 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 154ms (Views: 153.0ms)
+
+
+Started POST "/users/sign_in" for 10.240.1.15 at 2017-02-15 21:32:37 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mjAFMS4fqT6Iz5m5mk3t6spIx1tBmbe8VvbwyayIOIdH3Opkj+4tqV83wMND0drJTZZSHArFaOVj090vGvI8/w==", "user"=>{"email"=>"jboudreau12@apu.edu", "password"=>"Discocat5"}, "commit"=>"Sign in"}
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jboudreau12@apu.edu"}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000885496s
+MONGODB | localhost:27017 | bm_development.update | STARTED | {"update"=>"users", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "u"=>{"$set"=>{"last_sign_in_at"=>2017-02-15 21:26:06 UTC, "current_sign_in_at"=>2017-02-15 21:32:37 UTC, "last_sign_in_ip"=>"10.240.1.64", "current_sign_in_ip"...
+MONGODB | localhost:27017 | bm_development.update | SUCCEEDED | 0.000814541s
+Redirected to http://bunkmate-jobeau.c9users.io:8080/
+Completed 302 Found in 168ms
+
+
+Started GET "/" for 10.240.0.204 at 2017-02-15 21:32:37 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58769f3f06980b0870203883')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001481589s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001234526s
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 124ms (Views: 117.9ms)
+
+
