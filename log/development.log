@@ -20152,3 +20152,94 @@ MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0008692600000000
 Completed 200 OK in 103ms (Views: 101.1ms)
 
 
+Started GET "/" for 10.240.0.187 at 2017-02-16 21:48:42 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/ubuntu/workspace/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589b9c11c07e680ffadf8831')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0014848489999999999s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0009403349999999999s
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+  Rendered elements/_navbar.html.erb (1.2ms)
+Completed 200 OK in 613ms (Views: 577.2ms)
+
+
+Started GET "/favicon.ico" for 10.240.0.204 at 2017-02-16 21:48:45 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (12.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (86.3ms)
+Started GET "/student/student_home" for 10.240.1.64 at 2017-02-16 21:48:49 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentController#student_home as HTML
+  Rendering student/student_home.html.erb within layouts/application
+  Rendered student/student_home.html.erb within layouts/application (6.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589b9c11c07e680ffadf8831')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.00197097s
+  Rendered elements/_navbar.html.erb (2.4ms)
+Completed 200 OK in 239ms (Views: 236.3ms)
+
+
+Started GET "/student/matches" for 10.240.0.206 at 2017-02-16 21:48:59 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentController#matches as HTML
+  Rendering student/matches.html.erb within layouts/application
+  Rendered student/matches.html.erb within layouts/application (6.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589b9c11c07e680ffadf8831')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0006321250000000001s
+  Rendered elements/_navbar.html.erb (1.2ms)
+Completed 200 OK in 158ms (Views: 155.4ms)
+
+
+Started GET "/student/dorm" for 10.240.0.206 at 2017-02-16 21:49:06 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentController#dorm as HTML
+  Rendering student/dorm.html.erb within layouts/application
+  Rendered student/dorm.html.erb within layouts/application (3.9ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589b9c11c07e680ffadf8831')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000984594s
+  Rendered elements/_navbar.html.erb (1.2ms)
+Completed 200 OK in 98ms (Views: 96.7ms)
+
+
