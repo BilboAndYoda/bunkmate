@@ -1,4 +1,3 @@
-<%= render "elements/welcomeshit" %>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "form-signin" }) do |f| %>  
   <%= f.label :email, "Email", :class => "sr-only" %>
   <%= f.email_field :email, autofocus: true, :class => "form-control", :placeholder => "john@example.com" %>
