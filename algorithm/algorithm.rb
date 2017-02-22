@@ -1,29 +1,42 @@
-require_relative  'student'
-require_relative  'question'
-require_relative  'questionnaire'
-
 #gem install mongo
 require 'rubygems'
 require 'mongo'
 Mongo::Logger.logger.level = ::Logger::DEBUG
 
-begin
+def comparify(db, qID_1, qID_2)
+  
+  puts "Running comparify..."
+  
+  questionnaires = db["questionnaires"]
+  
+  questions1 = questionnaires.find({"id" => qID_1})
+  questions2 = questionnaires.find({"id" => qID_2})
+  
+  if questions1.count == questions2.count
 
-    test = Student.new
-    test.toString()
+    puts "They have same length"
     
-    #db = Mongo::Connection.new.db("testDB") # OR
-    #db = Mongo::Connection.new("localhost").db("mydb") # OR
+  else
+    
+    puts "They do not have same length"
+      
+  end
+  
+end
+
+begin
+    
     db = Mongo::Client.new([ 'localhost' ], :database => 'bm_development')
-    #db = Mongo::Connection.new("localhost", 27017).db("testDB")
     
-    db.database_names.each { |name| puts name }
+    # db[:questionnaires].find.each { |doc| puts doc }
+    
+    comparify(db, 1, 2)
     
     rescue Mongo::Error::NoServerAvailable => e
     
         p "Cannot connect to the server"
         p e
-    
+        
 end
 
 #collection = db[:answer]

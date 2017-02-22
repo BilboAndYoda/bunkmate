@@ -27,10 +27,45 @@ begin
     puts "#{result.inserted_count} documents were inserted"
 =end
     
-    db.collections.each { |coll| puts coll.name }
-
-    db[:students].find.each { |doc| puts doc }
+=begin
+    coll = db["questions"]
+    coll.delete_one({:id => 0})
+    coll.delete_one({:id => 1})
+    coll.delete_one({:id => 2})
+      
+    db[:questions].insert_one({prompt: "Answer this question?", id: 1, responseType: 0, responses: "Sure thing,Nope,Who dat,Boing boing", relation: 0})
+    db[:questions].insert_one({prompt: "Answer another question?", id: 2, responseType: 0, responses: "Okay I guess,Where has the rum gone?", relation: 0})
+    db[:questions].insert_one({prompt: "Answer one last question?", id: 3, responseType: 0, responses: "GET AWAY FROM ME!, I WANT THIS NIGHTMARE TO BE OVER! WHO ARE YOU?", relation: 1})
+=end
     
+=begin
+    db[:questionnaires].insert_one({id: 1, questionID: 1, response: 0,})
+    db[:questionnaires].insert_one({id: 1, questionID: 2, response: 1,})
+    db[:questionnaires].insert_one({id: 1, questionID: 3, response: 2,})
+    db[:questionnaires].insert_one({id: 2, questionID: 1, response: 1,})
+    db[:questionnaires].insert_one({id: 2, questionID: 2, response: 2,})
+    db[:questionnaires].insert_one({id: 2, questionID: 3, response: 2,})
+    db[:questionnaires].insert_one({id: 3, questionID: 1, response: 2,})
+    db[:questionnaires].insert_one({id: 3, questionID: 2, response: 1,})
+    db[:questionnaires].insert_one({id: 3, questionID: 3, response: 0,})
+    
+    db[:questionnaires].insert_one({id: 4, questionID: 1, response: 0,})
+    db[:questionnaires].insert_one({id: 4, questionID: 2, response: 1,})
+    db[:questionnaires].insert_one({id: 4, questionID: 3, response: 2,})
+    db[:questionnaires].insert_one({id: 5, questionID: 1, response: 1,})
+    db[:questionnaires].insert_one({id: 5, questionID: 2, response: 2,})
+    db[:questionnaires].insert_one({id: 5, questionID: 3, response: 2,})
+    db[:questionnaires].insert_one({id: 6, questionID: 1, response: 2,})
+    db[:questionnaires].insert_one({id: 6, questionID: 2, response: 1,})
+    db[:questionnaires].insert_one({id: 6, questionID: 3, response: 0,})
+=end
+
+=begin
+    db[:students].find.each { |doc| puts doc }
+    db[:questions].find.each { |doc| puts doc }
+    db[:questionnaires].find.each { |doc| puts doc }
+=end
+
     rescue Mongo::Error::NoServerAvailable => e
     
         p "Cannot connect to the server"
