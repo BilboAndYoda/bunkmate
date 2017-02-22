@@ -33835,3 +33835,278 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 80ms (Views: 78.8ms)
 
 
+Started GET "/" for 10.240.0.186 at 2017-02-22 19:53:00 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/ubuntu/workspace/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as HTML
+Redirected to http://bunkmate-jobeau.c9users.io:8080/sign-in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 16ms
+
+
+Started GET "/sign-in" for 10.240.0.69 at 2017-02-22 19:53:01 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 6036ms (Views: 6033.4ms)
+
+
+Started GET "/" for 10.240.0.119 at 2017-02-22 20:53:16 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/ubuntu/workspace/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as HTML
+Redirected to http://bunkmate-jobeau.c9users.io:8080/sign-in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 20ms
+
+
+Started GET "/sign-in" for 10.240.0.186 at 2017-02-22 20:53:16 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (0.3ms)
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 569ms (Views: 566.5ms)
+
+
+Started GET "/sign-in" for 10.240.1.32 at 2017-02-22 20:54:04 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (1.2ms)
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 152ms (Views: 148.8ms)
+
+
+Started GET "/sign-in" for 10.240.0.179 at 2017-02-22 20:54:13 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 103ms (Views: 101.9ms)
+
+
+Started GET "/" for 10.240.0.179 at 2017-02-22 20:54:14 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+Redirected to http://bunkmate-jobeau.c9users.io:8080/sign-in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms
+
+
+Started GET "/answer/index" for 10.240.1.32 at 2017-02-22 20:54:15 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnswerController#index as HTML
+  Rendering answer/index.html.erb within layouts/application
+  Rendered answer/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 87ms (Views: 77.6ms)
+
+
+Started GET "/admin" for 10.240.0.179 at 2017-02-22 20:54:15 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (0.4ms)
+Started GET "/admin" for 10.240.1.32 at 2017-02-22 20:54:15 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+Completed 200 OK in 165ms (Views: 163.5ms)
+
+
+  Rendered admin/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 102ms (Views: 84.5ms)
+
+
+Started POST "/users/sign_in" for 10.240.1.19 at 2017-02-22 20:55:50 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wQKn2E8e6i7TTnD8QpuxDfvDbnA6dyXV8O0T7WMk2br2/IqGd0DdcjKbSIuEDKzhOgfMLRUdRBxMeyATXPExjA==", "user"=>{"email"=>"hello@world.com", "password"=>"helloworld"}, "commit"=>"Sign in"}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"hello@world.com"}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.00160039s
+MONGODB | localhost:27017 | bm_development.update | STARTED | {"update"=>"users", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('58ac8ba206980b067d6470cc')}, "u"=>{"$set"=>{"last_sign_in_at"=>2017-02-22 19:39:12 UTC, "current_sign_in_at"=>2017-02-22 20:55:50 UTC, "last_sign_in_ip"=>"10.240.1.60", "current_sign_in_ip"...
+MONGODB | localhost:27017 | bm_development.update | SUCCEEDED | 0.0008286810000000001s
+Redirected to http://bunkmate-jobeau.c9users.io:8080/
+Completed 302 Found in 209ms
+
+
+Started GET "/" for 10.240.0.182 at 2017-02-22 20:55:50 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58ac8ba206980b067d6470cc')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000629464s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0009363020000000001s
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 82ms (Views: 77.3ms)
+
+
+Started GET "/sign-in" for 10.240.0.204 at 2017-02-22 20:55:59 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58ac8ba206980b067d6470cc')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.003606049s
+Redirected to http://bunkmate-jobeau.c9users.io:8080/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 7ms
+
+
+Started GET "/" for 10.240.0.182 at 2017-02-22 20:55:59 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58ac8ba206980b067d6470cc')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0006380530000000001s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0006206250000000001s
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 98ms (Views: 94.9ms)
+
+
+Started DELETE "/users/sign_out" for 10.240.0.204 at 2017-02-22 20:56:03 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"L5M3CE+577krGiA7IyNvdzVmTDd02iZid6uL9xHoidflgupj5ZRB63PORdj3o2LLzMBmiHzl3KqFFcBd3a4SAA=="}
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58ac8ba206980b067d6470cc')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000677336s
+Redirected to http://bunkmate-jobeau.c9users.io:8080/
+Completed 302 Found in 7ms
+
+
+Started GET "/" for 10.240.1.19 at 2017-02-22 20:56:03 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+Redirected to http://bunkmate-jobeau.c9users.io:8080/sign-in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/sign-in" for 10.240.0.182 at 2017-02-22 20:56:03 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (0.3ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 88ms (Views: 85.9ms)
+
+
+Started GET "/users/sign_up" for 10.240.1.19 at 2017-02-22 20:56:07 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 110ms (Views: 108.2ms)
+
+
+Started POST "/users" for 10.240.0.204 at 2017-02-22 20:56:21 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B2T7yv7fqhAum59HEjbk2mJH3g8NT1qxwpz4XXgGmTfCX0CX0BGaM1RV3qo5bTEXm2nUX84L6lynSOMUYk6g5w==", "user"=>{"email"=>"dangrissom@likeaboss.com", "password"=>"likeaboss", "password_confirmation"=>"likeaboss"}, "commit"=>"Sign up"}
+MONGODB | localhost:27017 | bm_development.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0'), "email"=>"dangrissom@likeaboss.com", "encrypted_password"=>"$2a$11$F0GWLCZQCwUcfhePXGJMNed.7K0.DweRs6Y6EAlf4/VKGrqDI/CCy", "sign_in_count"=>0}], "ordered"=>true}
+MONGODB | localhost:27017 | bm_development.insert | SUCCEEDED | 0.000861992s
+MONGODB | localhost:27017 | bm_development.update | STARTED | {"update"=>"users", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0')}, "u"=>{"$set"=>{"last_sign_in_at"=>2017-02-22 20:56:21 UTC, "current_sign_in_at"=>2017-02-22 20:56:21 UTC, "last_sign_in_ip"=>"10.240.0.204", "current_sign_in_ip...
+MONGODB | localhost:27017 | bm_development.update | SUCCEEDED | 0.000715081s
+Redirected to http://bunkmate-jobeau.c9users.io:8080/
+Completed 302 Found in 167ms
+
+
+Started GET "/" for 10.240.1.64 at 2017-02-22 20:56:21 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0007844320000000001s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000828232s
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 84ms (Views: 79.8ms)
+
+
+Started GET "/answer/index" for 10.240.1.15 at 2017-02-22 20:56:34 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnswerController#index as HTML
+  Rendering answer/index.html.erb within layouts/application
+  Rendered answer/index.html.erb within layouts/application (4.4ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000876151s
+Completed 200 OK in 121ms (Views: 118.6ms)
+
+
+Started GET "/student/student_home" for 10.240.0.204 at 2017-02-22 20:56:49 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentController#student_home as HTML
+  Rendering student/student_home.html.erb within layouts/application
+  Rendered student/student_home.html.erb within layouts/application (5.7ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000934637s
+Completed 200 OK in 100ms (Views: 97.9ms)
+
+
+Started GET "/student/matches" for 10.240.1.64 at 2017-02-22 20:57:13 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentController#matches as HTML
+  Rendering student/matches.html.erb within layouts/application
+  Rendered elements/_footer.html.erb (0.6ms)
+  Rendered student/matches.html.erb within layouts/application (4.4ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000867384s
+Completed 200 OK in 69ms (Views: 67.6ms)
+
+
+Started GET "/student/student_home" for 10.240.0.69 at 2017-02-22 20:57:22 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentController#student_home as HTML
+  Rendering student/student_home.html.erb within layouts/application
+  Rendered student/student_home.html.erb within layouts/application (3.8ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000676993s
+Completed 200 OK in 113ms (Views: 111.9ms)
+
+
+Started GET "/student/dorm" for 10.240.1.17 at 2017-02-22 20:57:24 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentController#dorm as HTML
+  Rendering student/dorm.html.erb within layouts/application
+  Rendered elements/_footer.html.erb (0.7ms)
+  Rendered student/dorm.html.erb within layouts/application (6.3ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000865991s
+Completed 200 OK in 144ms (Views: 140.9ms)
+
+
+Started GET "/student/student_home" for 10.240.1.60 at 2017-02-22 20:57:33 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentController#student_home as HTML
+  Rendering student/student_home.html.erb within layouts/application
+  Rendered student/student_home.html.erb within layouts/application (4.3ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001132875s
+Completed 200 OK in 130ms (Views: 128.1ms)
+
+
+Started GET "/admin" for 10.240.1.32 at 2017-02-22 20:58:13 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (1.0ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000808582s
+Completed 200 OK in 97ms (Views: 95.9ms)
+
+
