@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+  
   get 'admin/match'
 
   get 'admin/questionnaire'
@@ -9,10 +7,6 @@ Rails.application.routes.draw do
   get 'admin/profile'
 
   get 'admin/students'
-
-=======
-<<<<<<< HEAD
->>>>>>> e8c35036710a5a141d17d1d0d796b9e5af409930
 
   get 'student/matches'
 
@@ -24,11 +18,7 @@ Rails.application.routes.draw do
 
   get 'answer/index'
   post 'answer/new'
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
->>>>>>> origin/master
->>>>>>> e8c35036710a5a141d17d1d0d796b9e5af409930
+
   root :to => 'home#index'
 
   devise_for :users
@@ -37,12 +27,8 @@ Rails.application.routes.draw do
   get '/sign-in' => "devise/sessions#new", :as => :login
   end
   
-<<<<<<< HEAD
   get '/questionaire', to: 'questionaire#index'
   
   get '/admin', to: 'admin#index'
   
-  end
-=======
 end
->>>>>>> origin/master
