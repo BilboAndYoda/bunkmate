@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   
   get 'admin/match'
 
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
   get 'admin/profile'
 
   get 'admin/students'
+
 
   get 'student/matches'
 
