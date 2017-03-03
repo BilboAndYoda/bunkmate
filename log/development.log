@@ -31236,3 +31236,483 @@ Completed 200 OK in 124ms (Views: 117.9ms)
 >>>>>>> origin/master
 
 
+Started GET "/" for 10.240.0.207 at 2017-02-22 21:11:25 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/ubuntu/workspace/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.020166127s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.01179726s
+  Rendered home/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 3982ms (Views: 3836.9ms)
+
+
+Started GET "/" for 10.240.1.19 at 2017-02-22 21:11:36 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000518913s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.00046045s
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 72ms (Views: 68.5ms)
+
+
+Started GET "/admin/profile" for 10.240.1.64 at 2017-02-22 21:11:38 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000561103s
+Completed 200 OK in 73ms (Views: 69.8ms)
+
+
+Started GET "/admin/profile" for 10.240.0.207 at 2017-02-22 21:11:39 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000557915s
+Completed 200 OK in 197ms (Views: 195.2ms)
+
+
+Started GET "/admin/students" for 10.240.1.19 at 2017-02-22 21:11:53 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+Started GET "/admin/students" for 10.240.1.19 at 2017-02-22 21:11:53 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.6ms)
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.1ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.005926389s
+Completed 200 OK in 176ms (Views: 172.0ms)
+
+
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.004957289s
+Completed 200 OK in 172ms (Views: 171.2ms)
+
+
+Started GET "/admin/students" for 10.240.0.110 at 2017-02-22 21:12:33 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0007856759999999999s
+Completed 200 OK in 161ms (Views: 159.9ms)
+
+
+Started GET "/admin/students" for 10.240.1.60 at 2017-02-22 21:14:10 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0008898549999999999s
+Completed 200 OK in 237ms (Views: 235.0ms)
+
+
+Started GET "/admin/profile" for 10.240.0.182 at 2017-02-22 21:14:11 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0011280819999999999s
+Completed 200 OK in 86ms (Views: 84.4ms)
+
+
+Started GET "/admin/match" for 10.240.1.64 at 2017-02-22 21:14:13 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#match as HTML
+  Rendering admin/match.html.erb within layouts/application
+  Rendered admin/match.html.erb within layouts/application (0.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000988813s
+Completed 200 OK in 170ms (Views: 168.5ms)
+
+
+Started GET "/admin/match" for 10.240.0.186 at 2017-02-22 21:14:15 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#match as HTML
+  Rendering admin/match.html.erb within layouts/application
+  Rendered admin/match.html.erb within layouts/application (0.4ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001306209s
+Completed 200 OK in 195ms (Views: 194.1ms)
+
+
+Started GET "/admin/profile" for 10.240.1.64 at 2017-02-22 21:14:20 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.7ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001532931s
+Completed 200 OK in 109ms (Views: 107.6ms)
+
+
+Started GET "/admin/profile" for 10.240.1.64 at 2017-02-22 21:14:21 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.8ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000717532s
+Completed 200 OK in 111ms (Views: 104.6ms)
+
+
+Started GET "/admin/profile" for 10.240.0.179 at 2017-02-22 21:28:12 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000843152s
+Completed 200 OK in 72ms (Views: 70.7ms)
+
+
+Started GET "/admin/profile" for 10.240.0.187 at 2017-02-22 21:28:24 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.8ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0012796519999999998s
+Completed 200 OK in 95ms (Views: 93.0ms)
+
+
+Started GET "/admin/profile" for 10.240.1.20 at 2017-02-22 21:28:35 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.7ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0011673859999999999s
+Completed 200 OK in 104ms (Views: 102.4ms)
+
+
+Started GET "/admin/profile" for 10.240.0.110 at 2017-02-22 21:34:38 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0006233530000000001s
+Completed 200 OK in 1755ms (Views: 1753.5ms)
+
+
+Started GET "/admin/students" for 10.240.0.69 at 2017-02-22 21:35:23 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.4ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0011941699999999998s
+Completed 200 OK in 70ms (Views: 69.2ms)
+
+
+Started GET "/admin/students" for 10.240.0.69 at 2017-02-22 21:35:24 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001015836s
+Completed 200 OK in 109ms (Views: 107.4ms)
+
+
+Started GET "/admin/students" for 10.240.0.187 at 2017-02-22 21:35:36 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001170806s
+Completed 200 OK in 111ms (Views: 109.3ms)
+
+
+Started GET "/admin/profile" for 10.240.0.110 at 2017-02-22 21:35:36 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000679969s
+Completed 200 OK in 83ms (Views: 81.9ms)
+
+
+Started GET "/admin/" for 10.240.1.15 at 2017-02-22 21:35:37 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0008586490000000001s
+Completed 200 OK in 78ms (Views: 77.3ms)
+
+
+Started GET "/admin/" for 10.240.1.32 at 2017-02-22 21:39:15 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (0.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000755089s
+Completed 200 OK in 1940ms (Views: 1939.2ms)
+
+
+Started GET "/admin/" for 10.240.0.110 at 2017-02-22 21:40:07 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0005891039999999999s
+Completed 200 OK in 218ms (Views: 217.1ms)
+
+
+Started GET "/admin/profile" for 10.240.0.207 at 2017-02-22 21:40:09 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.8ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000842932s
+Completed 200 OK in 95ms (Views: 92.9ms)
+
+
+Started GET "/admin/students" for 10.240.0.110 at 2017-02-22 21:40:12 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000839221s
+Completed 200 OK in 97ms (Views: 93.6ms)
+
+
+Started GET "/admin/" for 10.240.0.186 at 2017-02-22 21:40:15 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000558227s
+Completed 200 OK in 143ms (Views: 141.2ms)
+
+
+Started GET "/admin/profile" for 10.240.1.20 at 2017-02-22 21:40:30 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.002239127s
+Completed 200 OK in 278ms (Views: 276.5ms)
+
+
+Started GET "/admin/students" for 10.240.0.187 at 2017-02-22 21:40:33 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.7ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000612062s
+Completed 200 OK in 147ms (Views: 146.2ms)
+
+
+Started GET "/admin/" for 10.240.1.60 at 2017-02-22 21:41:58 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001086123s
+Completed 200 OK in 97ms (Views: 95.6ms)
+
+
+Started GET "/admin/" for 10.240.0.187 at 2017-02-22 21:41:58 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (0.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000621325s
+Completed 200 OK in 84ms (Views: 83.0ms)
+
+
+Started GET "/admin/match" for 10.240.0.179 at 2017-02-22 21:41:58 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#match as HTML
+  Rendering admin/match.html.erb within layouts/application
+  Rendered admin/match.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000836001s
+Completed 200 OK in 94ms (Views: 92.5ms)
+
+
+Started GET "/admin/profile" for 10.240.0.179 at 2017-02-22 21:42:03 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000607826s
+Completed 200 OK in 184ms (Views: 182.6ms)
+
+
+Started GET "/admin/students" for 10.240.1.60 at 2017-02-22 21:42:05 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000628409s
+Completed 200 OK in 92ms (Views: 89.7ms)
+
+
+Started GET "/admin/students" for 10.240.0.119 at 2017-02-22 21:46:03 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000628528s
+Completed 200 OK in 71ms (Views: 69.3ms)
+
+
+Started GET "/admin/profile" for 10.240.1.19 at 2017-02-22 21:46:09 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.7ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0005942629999999999s
+Completed 200 OK in 85ms (Views: 83.3ms)
+
+
+Started GET "/admin/profile" for 10.240.0.110 at 2017-02-22 21:46:41 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000912776s
+Completed 200 OK in 81ms (Views: 79.0ms)
+
+
+Started GET "/admin/students" for 10.240.0.182 at 2017-02-22 21:46:57 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000891944s
+Completed 200 OK in 71ms (Views: 69.3ms)
+
+
+Started GET "/admin/students" for 10.240.1.64 at 2017-02-22 21:47:06 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#students as HTML
+  Rendering admin/students.html.erb within layouts/application
+  Rendered admin/students.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001075054s
+Completed 200 OK in 84ms (Views: 82.3ms)
+
+
+Started GET "/admin/profile" for 10.240.1.15 at 2017-02-22 21:47:11 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.7ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000604734s
+Completed 200 OK in 92ms (Views: 90.8ms)
+
+
+Started GET "/" for 10.240.1.32 at 2017-02-24 21:20:57 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/ubuntu/workspace/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.001154175s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000725173s
+  Rendered home/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 2977ms (Views: 2946.7ms)
+
+
+Started GET "/" for 10.240.1.15 at 2017-02-24 21:21:09 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000811249s
+  Rendering home/index.html.erb within layouts/application
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000708544s
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 141ms (Views: 136.7ms)
+
+
+Started GET "/admin/profile" for 10.240.1.20 at 2017-02-24 21:21:09 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.5ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.00057569s
+Completed 200 OK in 111ms (Views: 109.2ms)
+
+
+Started GET "/admin/profile" for 10.240.0.187 at 2017-02-24 21:21:10 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.9ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.00114163s
+Completed 200 OK in 253ms (Views: 251.3ms)
+
+
+Started GET "/admin/profile" for 10.240.1.64 at 2017-02-24 21:21:43 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (1.2ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0012788s
+Completed 200 OK in 3366ms (Views: 3364.4ms)
+
+
+Started GET "/admin/profile" for 10.240.1.17 at 2017-02-24 21:23:19 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#profile as HTML
+  Rendering admin/profile.html.erb within layouts/application
+  Rendered admin/profile.html.erb within layouts/application (0.8ms)
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589e2a6781eb3e0a559f0f1d')}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.0006410179999999999s
+Completed 200 OK in 2987ms (Views: 2985.1ms)
+
+
