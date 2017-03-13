@@ -31,4 +31,7 @@ Rails.application.routes.draw do
   
   get '/admin', to: 'admin#index'
   
+  resources :create_new do post :input, :on=>:collection
+end
+  
 end

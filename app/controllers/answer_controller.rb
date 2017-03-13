@@ -1,10 +1,6 @@
 class AnswerController < ApplicationController
-  def index
-    @answer = Answer.new
+
+  def create_new
+    my_input = params['my_input']
   end
-  
-  def new
-     @answer = Answer.new
-  end
-  
 end
