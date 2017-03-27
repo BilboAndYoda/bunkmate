@@ -36,6 +36,8 @@ begin
     db[:questions].insert_one({prompt: "Answer this question?", id: 1, responseType: 0, responses: "Sure thing,Nope,Who dat,Boing boing", relation: 0})
     db[:questions].insert_one({prompt: "Answer another question?", id: 2, responseType: 0, responses: "Okay I guess,Where has the rum gone?", relation: 0})
     db[:questions].insert_one({prompt: "Answer one last question?", id: 3, responseType: 0, responses: "GET AWAY FROM ME!, I WANT THIS NIGHTMARE TO BE OVER! WHO ARE YOU?", relation: 1})
+    db[:questions].insert_one({prompt: "Who you be SCALE?", id: 4, responseType: 2, responses: "Less,More", relation: 0})
+    db[:questions].insert_one({prompt: "PUT DIS SHTUFF IN ORDER?", id: 5, responseType: 1, responses: "Drugs,Alcohol,Popsicles,Poopoo", relation: 0})
 =end
     
 =begin
@@ -58,6 +60,21 @@ begin
     db[:questionnaires].insert_one({id: 6, questionID: 1, response: 2,})
     db[:questionnaires].insert_one({id: 6, questionID: 2, response: 1,})
     db[:questionnaires].insert_one({id: 6, questionID: 3, response: 0,})
+    
+    db[:questionnaires].insert_one({id: 7, questionID: 1, response: 2,})
+    db[:questionnaires].insert_one({id: 7, questionID: 2, response: 1,})
+    db[:questionnaires].insert_one({id: 7, questionID: 3, response: 1,})
+    db[:questionnaires].insert_one({id: 8, questionID: 1, response: 2,})
+    db[:questionnaires].insert_one({id: 8, questionID: 2, response: 1,})
+    db[:questionnaires].insert_one({id: 8, questionID: 3, response: 1,})
+    
+    db[:questionnaires].insert_one({id: 9, questionID: 4, response: 0.5,})
+    db[:questionnaires].insert_one({id: 10, questionID: 4, response: -0.5,})
+    db[:questionnaires].insert_one({id: 11, questionID: 4, response: -0.25,})
+    
+    db[:questionnaires].insert_one({id: 12, questionID: 5, response: "1,2,3,4",})
+    db[:questionnaires].insert_one({id: 13, questionID: 5, response: "4,3,2,1",})
+    db[:questionnaires].insert_one({id: 14, questionID: 5, response: "1,2,3,4",})
 =end
 
 =begin
@@ -65,7 +82,17 @@ begin
     db[:questions].find.each { |doc| puts doc }
     db[:questionnaires].find.each { |doc| puts doc }
 =end
-
+    
+    
+    
+    #coll = db["questions"]
+    db[:questions].find.each { |doc| puts doc }
+    db[:questionnaires].find.each { |doc| puts doc }
+    #db[:questions].find({"id"=>3})
+    #coll.delete_one("id" => 4)
+    #coll.remove("id" => 4)
+    
+    
     rescue Mongo::Error::NoServerAvailable => e
     
         p "Cannot connect to the server"
