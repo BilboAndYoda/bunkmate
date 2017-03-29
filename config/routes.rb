@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'questionnaire/index'
+
   get 'admin/match'
 
   get 'admin/questionnaire'
@@ -27,11 +29,12 @@ Rails.application.routes.draw do
   get '/sign-in' => "devise/sessions#new", :as => :login
   end
   
-  get '/questionaire', to: 'questionaire#index'
+  resources :questionnaire
   
   get '/admin', to: 'admin#index'
   
   resources :create_new do post :input, :on=>:collection
+  
 end
   
 end
