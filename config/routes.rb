@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   
   get 'questionnaire/index'
 
@@ -9,6 +10,7 @@ Rails.application.routes.draw do
   get 'admin/profile'
 
   get 'admin/students'
+
 
   get 'student/matches'
 
