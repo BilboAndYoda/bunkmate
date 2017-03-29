@@ -8,5 +8,8 @@
 puts 'SETTING UP DEFAULT USER LOGIN'
 user = User.create! :name => 'Jordan Boudreau', :email => 'jboudreau12@apu.edu', :password => 'Discocat5', :password_confirmation => 'Discocat5'
 puts 'New user created: ' << user.name
-user2 = User.create! :name => 'Second User', :email => 'user2@example.com', :password => 'please', :password_confirmation => 'please'
-puts 'New user created: ' << user2.name
+
+
+puts 'SETTING UP DEFAULT ANSWER DATA'
+answer = Answer.create! :email => 'jboudreau12@apu.edu', :questionid => '1', :questionanswer => '1'
+puts 'New questionaire answer created: ' << answer.email

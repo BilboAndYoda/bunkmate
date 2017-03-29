@@ -1,0 +1,61 @@
+<div style="background:white !important" class= "jumbotron">
+    <h1 class="text-center">Your Dorm</h1>
+    <h2 class="text-center">Trinity 2nd south!</h2>
+</div>
+
+<div style="background:white !important" class= "jumbotron">
+    <div class="container-fluid">
+       
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="position:relative;z-index:1;"  >
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                  </ol>
+                
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox" class= "text-center">
+                    <div class="item active">
+                      <div class = "text-center">
+                      <%= image_tag("trinity_second.jpg",alt: "rss feed") %>
+                      </div>
+                    </div>
+                
+                    <div class="item">
+                        <div class = "text-center">
+                      <%= image_tag("trinity_second.jpg",alt: "rss feed") %>
+                      </div>
+                    </div>
+                
+                    <div class="item">
+                     <div class = "text-center">
+                      <%= image_tag("trinity_second.jpg",alt: "rss feed") %>
+                      </div>
+                    </div>
+                
+                    <div class="item">
+                     <div class = "text-center">
+                      <%= image_tag("trinity_second.jpg",alt: "rss feed") %>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
+            <h3 class = "text-left"> Rules: No drinking, smoking or playing golf in doors! <br><br> Utilities provided: Water, Gas, and electricity <br><br> Additional information: This floor was recently renovated</h3> 
+       
+    
+    
+    <%= render 'elements/footer' %>
+    </div>
+</div>

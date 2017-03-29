@@ -1,0 +1,35 @@
+<center>
+  <div class="jumbotron" >
+  <h1>Student Questionnaire</h1>
+<p>Please fill out each question with a number 1-5</p>
+<left>
+<%= form_for @answer, url: {action: "new"}, html: {class: "form-signin"} do |f| %>
+  <h5>1. How neat are you?</h5>
+  <%= f.text_field :qa1 %>
+  <h5>2. Do you like to go out?</h5>
+  <%= f.text_field :qa2 %>
+  <h5>3. How introverted are you?</h5>
+  <%= f.text_field :qa5 %>
+  <h5>Are you a morning person?</h5>
+  <%= f.text_field :qa4 %>
+  <h5>Do you like netflix?</h5>
+  <%= f.text_field :qa5 %>
+  <h5>Do you like books?</h5>
+  <%= f.text_field :qa6 %>
+  <h5>Do you like eating out?</h5>
+  <%= f.text_field :qa7 %>
+  <h5>Do you like to study in your room?</h5>
+  <%= f.text_field :qa8 %>
+  <h5>How heavy is your workload this semester?</h5>
+  <%= f.text_field :qa9 %>
+  <h5>How often do you like having friends over?</h5>
+  <%= f.text_field :qa10 %>
+  <h5>Do you mind confrontation?</h5>
+  <%= f.text_field :qa11 %>
+  <h5>Do you like to share?</h5>
+  <%= f.text_field :qa12 %>
+  <br>
+  <%= link_to 'Submit', "/student/student_home" %>
+<% end %>
+</left>
+</div></center>

@@ -1,0 +1,46 @@
+ <!-- Title Code -->
+<div style="background:white !important" class= "jumbotron">
+  <h1 class="text-center">Your Roommates!</h1>
+   <h2 class="text-center">University Village S-292</h2>
+</div>
+
+
+<div style="background:white !important" class= background-size: cover;"jumbotron">
+ 
+<div class="container-fluid">
+
+ <!-- First roommate info -->  
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <%= image_tag("StockStudent3.jpg",alt: "rss feed", :size => "256x256") %> 
+          <div class="caption">
+            <h3>Roommate 1</h3>
+             <p><font size="2">Name: <br> Phone number: <br> Email: <br> Address:</font></p>
+          </div>
+        </div>
+    </div>
+    
+<!-- Second roommate info -->
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <%= image_tag("StockStudent3.jpg", :alt => "student2", :size => "256x256") %>
+          <div class="caption">
+            <h3>Roommate 2</h3>
+             <p><font size="2">Name: <br> Phone number: <br> Email: <br> Address:</font></p>
+          </div>
+        </div>
+    </div>
+ <!-- Third roommate info -->
+ 
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <%= image_tag("StockStudent3.jpg", :alt => "student3", :size => "256x256") %>
+          <div class="caption">
+            <h3>Roommate 3</h3>
+            <p><font size="2">Name: <br> Phone number: <br> Email: <br> Address:</font></p>
+          </div>
+        </div>
+      </div>
+      <%= render 'elements/footer' %>
+  </div>
+</div>

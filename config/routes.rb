@@ -1,4 +1,26 @@
 Rails.application.routes.draw do
+
+  
+  get 'admin/match'
+
+  get 'admin/questionnaire'
+
+  get 'admin/profile'
+
+  get 'admin/students'
+
+
+  get 'student/matches'
+
+  get 'student/contact'
+
+  get 'student/dorm'
+  
+  get 'student/student_home'
+
+  get 'answer/index'
+  post 'answer/new'
+
   root :to => 'home#index'
 
   devise_for :users
@@ -8,5 +30,7 @@ Rails.application.routes.draw do
   end
   
   get '/questionaire', to: 'questionaire#index'
+  
+  get '/admin', to: 'admin#index'
   
 end
