@@ -12667,6 +12667,31 @@ Completed 200 OK in 82ms (Views: 80.5ms)
 
 
 <<<<<<< HEAD
+Started GET "/" for 10.240.0.110 at 2017-01-30 21:23:43 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/ubuntu/workspace/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as HTML
+Redirected to http://sneaky-datelinenbc.c9users.io:8080/sign-in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 19ms
+
+
+Started GET "/sign-in" for 10.240.1.19 at 2017-01-30 21:23:43 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (0.3ms)
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 3141ms (Views: 3137.7ms)
+
+
+Started GET "/favicon.ico" for 10.240.0.204 at 2017-01-30 21:23:50 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+=======
+<<<<<<< HEAD
 Started GET "/" for 10.240.0.241 at 2017-01-27 21:18:47 +0000
 Cannot render console from 10.240.0.241! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/ubuntu/workspace/app/controllers/home_controller.rb:2)
@@ -12921,6 +12946,7 @@ Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0
 ActionController::RoutingError (No route matches [POST] "/questionaire"):
 >>>>>>> origin/master
 >>>>>>> origin/master
+>>>>>>> origin/master
   
 actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -12950,6 +12976,99 @@ puma (3.6.2) lib/puma/server.rb:275:in `block in run'
 puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
   Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
   Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+<<<<<<< HEAD
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [18 times] (17.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (107.9ms)
+Started POST "/users/sign_in" for 10.240.1.20 at 2017-01-30 21:23:59 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FwWUOEgTYWk0Yz76ubDQG4XtnzpEd4ho7O9r65by39de0B231TBzhryruiu2Nd1fOao6UlWPZyl+S7OXjiCkFw==", "user"=>{"email"=>"big@dicks.comn", "password"=>"deeck"}, "commit"=>"Sign in"}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"big@dicks.comn"}, "limit"=>-1, "sort"=>{"_id"=>1}}
+MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.00208021s
+Completed 401 Unauthorized in 14ms
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FwWUOEgTYWk0Yz76ubDQG4XtnzpEd4ho7O9r65by39de0B231TBzhryruiu2Nd1fOao6UlWPZyl+S7OXjiCkFw==", "user"=>{"email"=>"big@dicks.comn", "password"=>"deeck"}, "commit"=>"Sign in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 341ms (Views: 173.0ms)
+
+
+Started POST "/users/sign_in" for 10.240.1.20 at 2017-01-30 21:24:01 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wBC50Ndzn0ZrnLjm/CQ2D5ua2JgDkZ2MGihk5i171K+JxTBfSlCNqeNUPDfzoTtLJ9198BJpcs2IjLyaNamvbw==", "user"=>{"email"=>"big@dicks.comn", "password"=>""}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 2ms
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wBC50Ndzn0ZrnLjm/CQ2D5ua2JgDkZ2MGihk5i171K+JxTBfSlCNqeNUPDfzoTtLJ9198BJpcs2IjLyaNamvbw==", "user"=>{"email"=>"big@dicks.comn", "password"=>""}, "commit"=>"Sign in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (0.9ms)
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 268ms (Views: 264.0ms)
+
+
+Started POST "/users/sign_in" for 10.240.1.60 at 2017-01-30 21:24:02 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fQatgiRBa2goLmPToJinOf2VVd0w1BfUm+nFipNs5yQ00yQNuWJ5h6Dm5wKvHap9QdLwtSEs+JUJTR32i76c5A==", "user"=>{"email"=>"big@dicks.comn", "password"=>""}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 2ms
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fQatgiRBa2goLmPToJinOf2VVd0w1BfUm+nFipNs5yQ00yQNuWJ5h6Dm5wKvHap9QdLwtSEs+JUJTR32i76c5A==", "user"=>{"email"=>"big@dicks.comn", "password"=>""}, "commit"=>"Sign in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (1.0ms)
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 150ms (Views: 148.3ms)
+
+
+Started POST "/users/sign_in" for 10.240.0.69 at 2017-01-30 21:24:03 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx2MEaONRGSGaHaS3O8K0stj2jUO7vGmGTQ0TP9YM/SOyAWePq5Wiw6g8kPTageWdyR/XR8WHueLkOww54pINA==", "user"=>{"email"=>"big@dicks.comn", "password"=>""}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 2ms
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx2MEaONRGSGaHaS3O8K0stj2jUO7vGmGTQ0TP9YM/SOyAWePq5Wiw6g8kPTageWdyR/XR8WHueLkOww54pINA==", "user"=>{"email"=>"big@dicks.comn", "password"=>""}, "commit"=>"Sign in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 142ms (Views: 140.2ms)
+
+
+Started POST "/users/sign_in" for 10.240.1.19 at 2017-01-30 21:24:04 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AUWaw/sqMAlQOMElTrHzO8h308s72+QzL0fqqwDXOjtIkBNMZgki5tjwRfRBNP5/dDB2oyojC3K94zLXGAVB+w==", "user"=>{"email"=>"big@dicks.comn", "password"=>""}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 2ms
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AUWaw/sqMAlQOMElTrHzO8h308s72+QzL0fqqwDXOjtIkBNMZgki5tjwRfRBNP5/dDB2oyojC3K94zLXGAVB+w==", "user"=>{"email"=>"big@dicks.comn", "password"=>""}, "commit"=>"Sign in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered elements/_welcomeshit.html.erb (0.3ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 144ms (Views: 142.2ms)
+=======
 <<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
   Rendered collection of /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [18 times] (34.7ms)
@@ -34108,6 +34227,7 @@ Processing by AdminController#index as HTML
 MONGODB | localhost:27017 | bm_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58adfaf506980b0c242e9fe0')}, "limit"=>-1, "sort"=>{"_id"=>1}}
 MONGODB | localhost:27017 | bm_development.find | SUCCEEDED | 0.000808582s
 Completed 200 OK in 97ms (Views: 95.9ms)
+>>>>>>> origin/master
 
 
 Started GET "/student/student_home" for 10.240.0.241 at 2017-03-03 21:07:39 +0000
