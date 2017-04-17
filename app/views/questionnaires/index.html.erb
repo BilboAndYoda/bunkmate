@@ -1,0 +1,13 @@
+<center><div class="jumbotron">
+<div class="w3-container w3-section w3-border w3-round-xlarge">
+<h1>Compatibility Test Answers</h1>
+<p>Indexed on time submitted</p>
+<h2><%= link_to 'Click Here', "/student/matches" %></h2>
+<ul>
+    <% @questionnaires.each do |questionnaire| %> 
+    <li><%= questionnaire.question_1 %> <%= questionnaire.question_2 %> <%= questionnaire.question_3 %></li>
+    <%end%>
+
+</ul>
+</center>
+</div>

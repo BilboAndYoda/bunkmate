@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
   
+  get 'questionnaires/index'
+
+  get 'questionnaires/new'
+
   get 'questionnaire/index'
 
   get 'admin/match'
@@ -31,7 +35,7 @@ Rails.application.routes.draw do
   get '/sign-in' => "devise/sessions#new", :as => :login
   end
   
-  resources :questionnaire
+  resources :questionnaires
   
   get '/admin', to: 'admin#index'
   
