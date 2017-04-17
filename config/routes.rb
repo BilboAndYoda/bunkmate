@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+=======
 
   
   get 'questionnaires/index'
@@ -15,6 +17,7 @@ Rails.application.routes.draw do
 
   get 'admin/students'
 
+>>>>>>> 1cd8d8d6ddd355d6142427d7cfa164f024d26262
 
   get 'student/matches'
 
@@ -26,6 +29,16 @@ Rails.application.routes.draw do
 
   get 'answer/index'
   post 'answer/new'
+<<<<<<< HEAD
+  get 'admin/match'
+
+  get 'admin/questionnaire'
+
+  get 'admin/profile'
+
+  get 'admin/students'
+=======
+>>>>>>> 1cd8d8d6ddd355d6142427d7cfa164f024d26262
 
   root :to => 'home#index'
 
@@ -39,8 +52,16 @@ Rails.application.routes.draw do
   
   get '/admin', to: 'admin#index'
   
+<<<<<<< HEAD
   resources :create_new do post :input, :on=>:collection
   
 end
   
+=======
+<<<<<<< HEAD
+  end
+
+=======
+>>>>>>> sarah_marley
 end
+>>>>>>> 1cd8d8d6ddd355d6142427d7cfa164f024d26262
