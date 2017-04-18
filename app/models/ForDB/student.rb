@@ -8,7 +8,7 @@ class Student
   field :id,             type: Integer, default: 0
   field :gender,         type: String,  default: ""
   field :questionaireID, type: Integer, default: 0
-  field :roomID,         type: Integer, default: 0
+  field :matchID,        type: Integer, default: 0
   field :email,          type: String,  default: ""
   
 end

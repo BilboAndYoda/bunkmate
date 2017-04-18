@@ -16,12 +16,12 @@ begin
 #    doc = { :_id => 9, :name => "Toyota", :price => 37600 } 
 =begin
     result = db[:students].insert_many([
-    { :_id => BSON::ObjectId.new, :firstName => 'Chris', :middleInit => 'R', :lastName => 'Hansen', :id => 1, :gender => 'Male', :questionaireID => 1, :roomID => 0, :email => 'crh@bm.com'},
-    { :_id => BSON::ObjectId.new, :firstName => 'Sarah', :middleInit => 'G', :lastName => 'Bazingo', :id => 2, :gender => 'Female', :questionaireID => 2, :roomID => 0, :email => 'sgb@bm.com'},
-    { :_id => BSON::ObjectId.new, :firstName => 'Madison', :middleInit => 'W', :lastName => 'Case', :id => 3, :gender => 'Female', :questionaireID => 3, :roomID => 0, :email => 'mwc@bm.com'},
-    { :_id => BSON::ObjectId.new, :firstName => 'Girlie', :middleInit => 'A', :lastName => 'Haynes', :id => 4, :gender => 'Female', :questionaireID => 4, :roomID => 0, :email => 'gah@bm.com'},
-    { :_id => BSON::ObjectId.new, :firstName => 'Bob', :middleInit => 'E', :lastName => 'Trump', :id => 5, :gender => 'Male', :questionaireID => 5, :roomID => 0, :email => 'bet@bm.com'},
-    { :_id => BSON::ObjectId.new, :firstName => 'Francis', :middleInit => 'R', :lastName => 'Will', :id => 6, :gender => 'Male', :questionaireID => 6, :roomID => 0, :email => 'frw@bm.com'}
+    { :_id => BSON::ObjectId.new, :firstName => 'Chris', :middleInit => 'R', :lastName => 'Hansen', :id => 1, :gender => 'Male', :questionaireID => 1, :matchID => 0, :email => 'crh@bm.com'},
+    { :_id => BSON::ObjectId.new, :firstName => 'Sarah', :middleInit => 'G', :lastName => 'Bazingo', :id => 2, :gender => 'Female', :questionaireID => 2, :matchID => 0, :email => 'sgb@bm.com'},
+    { :_id => BSON::ObjectId.new, :firstName => 'Madison', :middleInit => 'W', :lastName => 'Case', :id => 3, :gender => 'Female', :questionaireID => 3, :matchID => 0, :email => 'mwc@bm.com'},
+    { :_id => BSON::ObjectId.new, :firstName => 'Girlie', :middleInit => 'A', :lastName => 'Haynes', :id => 4, :gender => 'Female', :questionaireID => 4, :matchID => 0, :email => 'gah@bm.com'},
+    { :_id => BSON::ObjectId.new, :firstName => 'Bob', :middleInit => 'E', :lastName => 'Trump', :id => 5, :gender => 'Male', :questionaireID => 5, :matchID => 0, :email => 'bet@bm.com'},
+    { :_id => BSON::ObjectId.new, :firstName => 'Francis', :middleInit => 'R', :lastName => 'Will', :id => 6, :gender => 'Male', :questionaireID => 6, :matchID => 0, :email => 'frw@bm.com'}
     ])
 
     puts "#{result.inserted_count} documents were inserted"
@@ -78,19 +78,21 @@ begin
 =end
 
 =begin
-    db[:students].find.each { |doc| puts doc }
     db[:questions].find.each { |doc| puts doc }
     db[:questionnaires].find.each { |doc| puts doc }
 =end
+
+
     
-    
+    #db[:students].find.each { |doc| puts doc }
+    db[:questionnaires].find.each { |doc| puts doc }
     
     #coll = db["questions"]
-    db[:questions].find.each { |doc| puts doc }
-    db[:questionnaires].find.each { |doc| puts doc }
+    #db[:questions].find.each { |doc| puts doc }
+    #db[:questionnaires].find.each { |doc| puts doc }
     #db[:questions].find({"id"=>3})
     #coll.delete_one("id" => 4)
-    #coll.remove("id" => 4)
+    
     
     
     rescue Mongo::Error::NoServerAvailable => e
@@ -101,3 +103,25 @@ begin
 end
 
 #collection = db[:answer]
+
+=begin
+    db[:questionnaires].insert_one({id: 1, questionID: 1, response: 0,})
+    db[:questionnaires].insert_one({id: 1, questionID: 2, response: 1,})
+    db[:questionnaires].insert_one({id: 1, questionID: 3, response: 2,})
+    db[:questionnaires].insert_one({id: 2, questionID: 1, response: 1,})
+    db[:questionnaires].insert_one({id: 2, questionID: 2, response: 2,})
+    db[:questionnaires].insert_one({id: 2, questionID: 3, response: 2,})
+    db[:questionnaires].insert_one({id: 3, questionID: 1, response: 2,})
+    db[:questionnaires].insert_one({id: 3, questionID: 2, response: 1,})
+    db[:questionnaires].insert_one({id: 3, questionID: 3, response: 0,})
+    
+    db[:questionnaires].insert_one({id: 4, questionID: 1, response: 0,})
+    db[:questionnaires].insert_one({id: 4, questionID: 2, response: 1,})
+    db[:questionnaires].insert_one({id: 4, questionID: 3, response: 2,})
+    db[:questionnaires].insert_one({id: 5, questionID: 1, response: 0,})
+    db[:questionnaires].insert_one({id: 5, questionID: 2, response: 0,})
+    db[:questionnaires].insert_one({id: 5, questionID: 3, response: 2,})
+    db[:questionnaires].insert_one({id: 6, questionID: 1, response: 1,})
+    db[:questionnaires].insert_one({id: 6, questionID: 2, response: 1,})
+    db[:questionnaires].insert_one({id: 6, questionID: 3, response: 2,})
+=end

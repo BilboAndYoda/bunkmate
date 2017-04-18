@@ -101,12 +101,88 @@ def comparify(db, qID_1, qID_2)
       
     end
           
-    print "Comparification: ", value, " / ", questions1.count, " = ", value.to_f / questions1.count, "\n"
+    print "Comparification of ", qID_1, " to ", qID_2, " result: ", value, " / ", questions1.count, " = ", value.to_f / questions1.count, "\n"
     
   else
     
     puts "They do not have same length"
       
+  end
+  
+  return value
+  
+end
+
+def commence_matchification(db)
+  
+  puts "Running Matchification..."
+  
+  students1 = db["students"]
+  students2 = db["students"]
+  
+  nextMatchID = 1
+  
+  students1.find.each do |student1|
+      
+      if student1["matchID"] != 0
+        next
+      end
+      
+      id1 = student1["id"]
+      
+      print "Matching student ", id1, "...\n"
+      
+      matchValues = Array.new(4, -1)
+      matchIDs    = Array.new(4, 0)
+      
+      students2.find.each do |student2|
+      
+        if student2["matchID"] != 0
+          next
+        end
+      
+        id2 = student2["id"]
+        
+        print "Comparing with student ", id2, "...\n"
+        
+        if id1 != id2
+          
+          print "Students are not the same!\n"
+          
+          qid1 = student1["questionaireID"]
+          qid2 = student2["questionaireID"]
+          
+          value = comparify(db, qid1, qid2)
+          
+          matchValues.each_with_index { | val, index |
+            print "Comparing ", value, " with ", val, " at ", index, "\n"
+            if value > val
+              matchIDs[index] = id2
+              matchValues[index] = value
+              break
+            end
+          }
+          
+        end
+        
+    end
+    
+    print "M-ID: ", nextMatchID, ": \n"
+    matchValues.each_with_index { | m, index |
+      val = matchIDs[index]
+      print index, ": (", val, "): ", m, "\n"
+      }
+    puts ""
+    
+    matchValues.each_with_index { | m, index |
+      val = matchIDs[index]
+      if val != -1
+        print "Setting student ", val, " to ", nextMatchID, ".\n"
+        students1.update_one({"id" => val}, {"$set" => {"matchID" => nextMatchID}})
+      end
+      }
+    nextMatchID = nextMatchID + 1
+    
   end
   
 end
@@ -132,6 +208,12 @@ begin
     comparify(db, 13, 14)
     comparify(db, 12, 14)
 =end    
+    
+    db[:students].find.each { |doc| db[:students].update_one({"id" => doc["id"]}, {"$set" => {"matchID" => 0}}) }
+    
+    commence_matchification(db)
+    
+    db[:students].find.each { |doc| puts doc }
     
     rescue Mongo::Error::NoServerAvailable => e
     
