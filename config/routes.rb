@@ -1,5 +1,21 @@
 Rails.application.routes.draw do
 
+  
+  get 'questionnaires/index'
+
+  get 'questionnaires/new'
+
+  get 'questionnaire/index'
+
+  get 'admin/match'
+
+  get 'admin/questionnaire'
+
+  get 'admin/profile'
+
+  get 'admin/students'
+
+
   get 'student/matches'
 
   get 'student/contact'
@@ -9,7 +25,7 @@ Rails.application.routes.draw do
   get 'student/student_home'
 
   get 'answer/index'
-  post 'answer/new'
+  post'answer/new'
   get 'admin/match'
 
   get 'admin/questionnaire'
@@ -17,6 +33,7 @@ Rails.application.routes.draw do
   get 'admin/profile'
 
   get 'admin/students'
+
 
   root :to => 'home#index'
 
@@ -26,9 +43,12 @@ Rails.application.routes.draw do
   get '/sign-in' => "devise/sessions#new", :as => :login
   end
   
-  get '/questionaire', to: 'questionaire#index'
+  resources :questionnaires
   
   get '/admin', to: 'admin#index'
   
+  resources :create_new do post :input, :on=>:collection
+  
   end
 
+end
