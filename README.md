@@ -1,4 +1,3 @@
 # README
-TODO: document project here
-
-last edited at 4/17/17
+TODO: become unicorn startup make the monies change the world.
+- Steve Jobs
