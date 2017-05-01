@@ -1,23 +1,6 @@
 Rails.application.routes.draw do
-  
-  get 'admin/match'
 
-  get 'admin/questionnaire'
-
-  get 'admin/profile'
-
-  get 'admin/students'
-
-  get 'student/matches'
-
-  get 'student/contact'
-
-  get 'student/dorm'
-  
-  get 'student/student_home'
-
-  get 'answer/index'
-  post 'answer/new'
+  resources :questionnaires
 
   root :to => 'home#index'
 
@@ -26,12 +9,5 @@ Rails.application.routes.draw do
   devise_scope :user do
   get '/sign-in' => "devise/sessions#new", :as => :login
   end
-  
-  get '/questionaire', to: 'questionaire#index'
-  
-  get '/admin', to: 'admin#index'
-  
-  resources :create_new do post :input, :on=>:collection
-end
   
 end

@@ -5,7 +5,6 @@ class User
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
-  has_many :answers
   
   ## Database authenticatable
   field :email,              type: String, default: ""
@@ -24,7 +23,7 @@ class User
   field :last_sign_in_at,    type: Time
   field :current_sign_in_ip, type: String
   field :last_sign_in_ip,    type: String
-
+  field :match_ID,           type: Integer, default: 0
   ## Confirmable
   # field :confirmation_token,   type: String
   # field :confirmed_at,         type: Time

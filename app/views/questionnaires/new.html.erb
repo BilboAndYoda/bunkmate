@@ -1,0 +1,13 @@
+<h1>Questionnaires#new</h1>
+<p>Find me in app/views/questionnaires/new.html.erb</p>
+
+<%= form_for @questionnaire do |f| %>
+<div>
+  <%= f.label :response %>
+  <%= f.text_field :response %>
+
+  </div>
+  <%= f.submit %>
+  
+
+<% end %>
