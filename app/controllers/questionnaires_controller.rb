@@ -9,7 +9,7 @@ class QuestionnairesController < ApplicationController
   
   def create
     @questionnaire = Questionnaire.new(
-      params.require(:questionnaire).permit(:response)
+      params.require(:questionnaire).permit(:response1, :email, :questionID)
       )
       if @questionnaire.save
           redirect_to questionnaires_url

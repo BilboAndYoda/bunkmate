@@ -6,3 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts 'SETTING UP DEFAULT USER LOGIN'
+
+  questionnaires = Questionnaire.create([{email: 'chris@hansen.com'}, {response: 1}, {questionID: 22}])

@@ -2,7 +2,10 @@
 <ul>
 <% @questionnaires.each do |questionnaire| %>
 <li>
-  <%= questionnaire.response %> 
+  <%= questionnaire.response %>
+  <%= questionnaire.email %>
+  <%= questionnaire.questionID %>
+ 
 </li>
 <% end %>
 </ul>

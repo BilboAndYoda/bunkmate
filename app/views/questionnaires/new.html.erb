@@ -1,13 +1,20 @@
-<h1>Questionnaires#new</h1>
+<h1>Question 1</h1>
 <p>Find me in app/views/questionnaires/new.html.erb</p>
 
 <%= form_for @questionnaire do |f| %>
 <div>
+  
+  You know that little indestructible black box that is used on planes? Why can't they make the whole plane out of the same substance? 
+  <br>
   <%= f.label :response %>
   <%= f.text_field :response %>
-
+  <br>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  
+  <%= f.hidden_field :questionID, :value => 1 %>
+  
   </div>
   <%= f.submit %>
   
-
 <% end %>

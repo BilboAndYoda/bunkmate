@@ -10,4 +10,16 @@ protected
       ## render :file => File.join(Rails.root, 'public/404'), :formats => [:html], :status => 404, :layout => false
     end
   end
+  
+  def create
+    if params.has_key?("puppy")
+      Puppy.create(puppy_params(params["puppy"]))
+    else
+      params["puppies"].each do |puppy|
+        if puppy["name"] != "" || puppy["breed"] != ""
+          Puppy.create(puppy_params(puppy))
+        end
+      end
+    end
+  end
 end
