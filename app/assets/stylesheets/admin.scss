@@ -2,17 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .admin {
-    width: 400px;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(255, 255, 255, .9);
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 255);
     padding: 20px;
+    margin: 10px 0px;
+    display: block;
     
   .admin-link {
     margin: 10px 0px;
     font-size: 22px;
   }
+  
   .form-signin{
     max-width: none;
     width: 100%;
