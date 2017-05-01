@@ -1,9 +1,9 @@
-<center><div class="jumbotron">
+<center><div style="background:white !important" class="jumbotron">
 <div class="w3-container w3-section w3-border w3-round-xlarge">
-<h1> You need to fill out your questionnaire! </h1>
+<h1> Fill Out Questionnaire </h1>
 <h2><%= link_to 'Click Here', "/questionnaires/new" %></h2>
 </center>
-<div class="jumbotron">
+<div style="background:white !important" class="jumbotron">
 <h3> Users in database: </h3>
 <% @users.each do |user| %>
   <p><%= user.email %> </p>
